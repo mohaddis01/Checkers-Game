@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkers Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Checkers</h1>
+        
+        <div class="game-info">
+            <div class="player-info">
+                <div class="player red" id="red-player">
+                    <div class="piece king"></div>
+                    <div class="piece"></div>
+                    <span>Player 1</span>
+                </div>
+                <div class="timer" id="red-timer">00:00</div>
+            </div>
+            
+            <div class="game-controls">
+                <div class="game-controls">
+    <button id="new-game-btn"><i class="fas fa-plus-circle"></i> New Game</button>
+    <button id="undo-btn"><i class="fas fa-undo"></i> Undo</button>
+    <select id="mode-select">
+        <option value="human">Human vs Human</option>
+        <option value="ai">Human vs AI</option>
+    </select>
+    <select id="difficulty-select">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+    <div class="game-status" id="game-status">Red's Turn</div>
+</div>
+</div>
+            
+            <div class="player-info">
+                <div class="player black" id="black-player">
+                    <div class="piece king"></div>
+                    <div class="piece"></div>
+                    <span>Player 2</span>
+                </div>
+                <div class="timer" id="black-timer">00:00</div>
+            </div>
+        </div>
+        
+        <div class="board" id="board"></div>
+        
+        <div class="move-history">
+            <h3>Move History</h3>
+            <div class="history-list" id="history-list"></div>
+        </div>
+    </div>
+    
+    <div class="modal" id="game-over-modal">
+        <div class="modal-content">
+            <h2 id="game-over-message">Game Over!</h2>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
