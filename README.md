@@ -1,2 +1,2 @@
 # Checkers-Game
-Basic checkers game wit ai and human mode using html , css, javascripts
+Basic checkers game with ai and human mode using html , css, javascripts
